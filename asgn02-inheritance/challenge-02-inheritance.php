@@ -2,54 +2,54 @@
 
 class MagicCard {
 
-  var $manaType;
-  var $convertedManaCost;
-  var $is_creature = false;
-  var $is_instant = false;
-  var $is_equipment = false;
-  var $whatTheCardDoes;
-  var $name;
-  var $rarity;
+  protected $manaType;
+  protected $convertedManaCost;
+  protected $is_creature = false;
+  protected $is_instant = false;
+  protected $is_equipment = false;
+  protected $whatTheCardDoes;
+  protected $name;
+  protected $rarity;
 
-  function __construct($name, $rarity, $convertedManaCost) {
+  public function __construct($name, $rarity, $convertedManaCost) {
     $this->name = $name;
     $this->rarity = $rarity;
     $this->manaCost = $convertedManaCost;
   }
     
-  function cardDescription() {
+  public function cardDescription() {
     return "Name: {$this->name}, Rarity: {$this->rarity}, Mana Cost: {$this->convertedManaCost}";
   }
 }
 
 class CreatureCard extends MagicCard {
-  var $power;
-  var $toughness;
+  protected $power;
+  protected $toughness;
 
-  function __construct($name, $rarity, $convertedManaCost, $power, $toughness) {
+  public function __construct($name, $rarity, $convertedManaCost, $power, $toughness) {
     $this->power = $power;
     $this->name = $name;
     $this->rarity = $rarity;
     $this->manaCost = $convertedManaCost;
     $this->toughness = $toughness;
   }
-  function cardDescription() {
+  public function cardDescription() {
     return "Name: {$this->name}<br /> Rarity: {$this->rarity}<br /> Mana Cost: {$this->convertedManaCost}<br /> Power: {$this->power}<br /> Toughness: {$this->toughness}";
   }
 }
 
 class Instant extends MagicCard {
 
-  var $effect;
+  protected $effect;
 
-  function __construct($name, $rarity, $convertedManaCost, $effect) {
+  public function __construct($name, $rarity, $convertedManaCost, $effect) {
     $this->name = $name;
     $this->rarity = $rarity;
     $this->manaCost = $convertedManaCost;
     $this->effect = $effect;
   }
 
-  function cardDescription() {
+  public function cardDescription() {
     return "Name: {$this->name}<br /> Rarity: {$this->rarity}<br /> Mana Cost: {$this->convertedManaCost}<br /> SpellEffect: {$this->effect}";
   }
 }
