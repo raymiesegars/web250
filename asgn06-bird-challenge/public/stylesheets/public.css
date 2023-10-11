@@ -1,0 +1,71 @@
+/* Apply styles to the body of the webpage */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the main content container */
+#main {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the page header */
+h2 {
+  color: #333;
+}
+
+/* Style the paragraph text */
+p {
+  color: #666;
+}
+
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Style table header (th) */
+th {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style table rows (alternating colors for better readability) */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style table data cells (td) */
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Style the footer */
+#footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #666;
+}
+
+/* Style links */
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
