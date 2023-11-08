@@ -99,8 +99,8 @@ class Bird {
   public function condition() from the bicycle.class.php file
   */
   public function conservation() {
-    if($this->conservationId > 0) {
-      return self::CONSERVATION_OPTIONS[$this->conservationId];
+    if($this->conservation_id > 0) {
+      return self::CONSERVATION_OPTIONS[$this->conservation_id];
     } else {
       return "Unknown";
     }
