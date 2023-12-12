@@ -2,7 +2,7 @@
 // Your other user creation logic goes here
 
 // Verify reCAPTCHA
-$recaptcha_secret_key = "6LdEtxwpAAAAANpK7UvnRrARb3pc4dF5zoyixpgq";
+$recaptcha_secret_key = "6LcXRyEpAAAAADyxB--qvqGUxPImoPFDc4PUQ8Ox";
 $recaptcha_response = $_POST['g-recaptcha-response'];
 
 $url = 'https://www.google.com/recaptcha/api/siteverify';
